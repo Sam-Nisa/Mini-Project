@@ -1,0 +1,513 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Battambang;
+    src: url(../Font/Battambang/Battambang-Regular.ttf);
+}
+
+@font-face {
+    font-family: Robot;
+    src: url(../Font/Robot/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Khmer;
+    src: url(../Font/Khmer/Khmer-Regular.ttf);
+}
+
+h5, h4, p{
+    font-family: Khmer;
+    font-family: Battambang;
+}
+.bg-custom{
+    background-color: #f9f9f9;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: Battambang;
+}
+
+.form-control {
+    font-family: Battambang;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+
+}
+
+.ms-n3 {
+    margin-left: -3rem;
+    margin-top: 12px;
+}
+
+.form-search {
+    max-width: 800px;
+    padding-block: 10px;
+}
+
+.bt-shop {
+    font-size: 30px;
+}
+
+.btn {
+    font-family: Battambang;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1.2rem;
+    color: black;
+    font-weight: bold;
+    font-family: Battambang;
+    font-size: 18px;
+    margin-left: 3px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: blue;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.home {
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1.2rem;
+    font-weight: bold;
+    font-family: Battambang;
+    background-color: #e0eaf3;
+    color: blue;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.drop {
+    width: 200px;
+    height: auto;
+    margin-left: 3px;
+    background-color: aliceblue;
+    position: absolute;
+    border-radius: 5px;
+    visibility: hidden;
+    top: 100px;
+    opacity: 0.1;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+.dropdown:hover .drop {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+.drop .dropdown-link {
+    font-size: 15px;
+    width: 190px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px 0px 3px -27px;
+    font-family: Battambang;
+    font-size: 18px;
+}
+
+.dropdown-link:hover {
+    background-color: #d9dcde;
+    transition: 1s;
+}
+
+.carousel-item img {
+    height: 550px;
+}
+
+.carousel {
+    position: relative;
+}
+
+.no-bg {
+    width: 100%;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.37);
+    position: absolute;
+    top: 0px;
+}
+
+.no-bg .circle {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff9d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/* ====Modal---=== */
+.modal-footer {
+    border-top: none;
+}
+::placeholder {
+    font-family: Battambang;
+    font-size: 14px;
+}
+
+input:focus {
+    font-family: Battambang;
+    font-size: 14px;
+}
+
+.form {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.fa-google {
+    font-size: 25px;
+    color: red;
+}
+
+.google {
+    /* background-color: #d9dcde96; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.icon-google {
+    width: 30px;
+    height: 30px;
+}
+.circle {
+    max-width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: relative;
+}
+.col-5-custom p{
+    position: absolute;
+    top: 134%;
+    font-family: Battambang;
+    font-size: 15px;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.3s;
+}
+.card:hover{
+    /* margin-top: 2px; */
+    transform: scale(1.01);
+}
+.card-title{
+    font-size: 23px;
+    font-family: Battambang;
+    color: #f90c0c;
+}
+.card-img-top{
+    height: 200px;
+    position: relative;
+    
+}
+.bg-icon{
+    width: 40px;
+    height: 85px;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+}
+.fav, .fav1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: azure;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fav1{
+    margin-top: 5px;
+}
+.fav:hover{
+    background-color: #e9eded;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.3s;
+}
+.fav1:hover{
+    background-color: #e9eded;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.3s;
+}
+.bi{
+    color: #0c1cf9;
+}
+.card-text{
+    color: black;
+}
+.card-text:hover{
+    color: #f90c0c;
+}
+.card-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .card-price .old-price {
+    text-decoration: line-through;
+    color: black;
+    margin-left: 10px;
+    
+  }
+  .card-rating {
+    color: #f90c0c;
+  }
+  .btn-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s, background-color 0.3s;
+}
+.btn-custom .icon {
+    margin-right: 8px;
+}
+.btn-custom:hover {
+    background-color: #007bff7e;
+}
+.btn-custom:hover .fas{
+    color: white;
+}
+.position-relative {
+    position: relative;
+    display: inline-block; 
+}
+ .position-relative {
+    position: relative;
+    display: inline-block; 
+}
+
+.imagess {
+    position: relative;
+    width: 100%;
+}
+
+.imagess::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.197);
+    pointer-events: none;
+    border-radius: 5px;
+
+ } 
+ .img{
+    border-radius: 1px 5px 4px 6px;
+ }
+ .describt{
+    position: absolute;
+    top: 0px;
+    padding: 0px 200px;
+    
+ }
+ .bt{
+    position: absolute;
+    top: 70%;
+ }
+ .card-small{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.3s;
+}
+.card-small .title{
+   position: absolute;
+   top: 75%;
+   left: 40%;
+}
+.card-small:hover{
+    /* margin-top: 2px; */
+    transform: scale(1.01);
+}
+.bg-icon-small{  
+    width: 40px;
+    height: 85px;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s;
+}
+.fav-small, .fav1-small{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: azure;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fav-small:hover{
+    background-color: #e9eded;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.3s;
+}
+.fav1-small:hover{
+    background-color: #e9eded;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.3s;
+}
+.fav1-small{
+    margin-top: 5px;
+}
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s;
+}
+.card-small:hover .bg-icon-small{
+    visibility: visible;
+    opacity: 1;
+    
+}
+.card-small:hover .hidden{
+    visibility: visible;
+    opacity: 1;
+    
+}
+.card-img-topp {
+    width: 100%;
+    height: auto;
+}
+.card-header {
+    background-color:#0D6EFD;
+    color: white;
+    text-align: center;
+}
+.card-body {
+    flex: 1; /* Allows the body to grow and fill the available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space evenly */
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure the card takes full height of the column */
+    margin-bottom: 30px; /* Margin between cards */
+}
+.card-img-top {
+    height: 240px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-top-left-radius: 0.375rem; /* Match card corners */
+    border-top-right-radius: 0.375rem; /* Match card corners */
+}
+
+
+
+/* ============the way to pay====== */
+.offer-card {
+    border: 1px solid #d4d3d3;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .offer-card img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+  .offer-card .offer-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .offer-card .offer-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .offer-card .offer-subtitle {
+    font-size: 0.9rem;
+    color: #888888;
+  }
+  .offer-card:hover .offer-subtitle {
+    color: #f90c0c;
+  }
+
+
+  /*========== Footer====== */
+ .fb{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #0D6EFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+ }
+ .company:hover{
+    color: #f90c0c;
+    text-decoration: underline;
+ }
+ .footer-bg {
+    background-color: #e0e0e0a3; 
+  }
+
+
+
+/* Responsive */
+  @media (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+    .navbar-nav .nav-link {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .header .btn {
+        width: 48%; 
+        margin-bottom: 10px; 
+    }
+    
+    
+
+}
+@media (min-width: 768px) { 
+    .navbar-nav .nav-link {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+ 
+  
